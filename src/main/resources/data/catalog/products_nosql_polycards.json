@@ -1,0 +1,3722 @@
+[
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "26706d7e805da846a32",
+      "metadata": {
+        "id": "MCO203412639600",
+        "product_id": "MCO18031244",
+        "url": "www.mercadolibre.com.co/mco203412639600",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "498382-MLA94710360983_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Logitech Español Latino de color Gris grafito",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.3 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.3
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Logitech"
+            },
+            {
+              "name": "distribución",
+              "value": "Español Latino"
+            },
+            {
+              "name": "conectividad",
+              "value": "Bluetooth"
+            },
+            {
+              "name": "característica",
+              "value": "Resistente a salpicaduras"
+            },
+            {
+              "name": "color",
+              "value": "Negro"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "b62179273c8eb5bb682",
+      "metadata": {
+        "id": "MCO289056647601",
+        "product_id": "MCO18659176",
+        "url": "www.mercadolibre.com.co/mco289056647601",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "738720-MLA92727210979_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Genius Español Latino de color Blanco",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.3 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.3
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 199900,
+              "currency": "COP"
+            },
+            "formatted": "$199.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 66634,
+              "currency": "COP",
+              "label": "3 cuotas de $66.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Genius"
+            },
+            {
+              "name": "distribución",
+              "value": "Español"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclado compacto"
+            },
+            {
+              "name": "color",
+              "value": "Rosa"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "c826a6fce48478dcb74",
+      "metadata": {
+        "id": "MCO286441134702",
+        "product_id": "MCO18330776",
+        "url": "www.mercadolibre.com.co/mco286441134702",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "634277-MLA92119634399_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "MÁS VENDIDO",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Microsoft Español Latino de color Negro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.4 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.4
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 109900,
+              "currency": "COP"
+            },
+            "formatted": "$109.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 36634,
+              "currency": "COP",
+              "label": "3 cuotas de $36.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Microsoft"
+            },
+            {
+              "name": "distribución",
+              "value": "Inglés"
+            },
+            {
+              "name": "conectividad",
+              "value": "Bluetooth"
+            },
+            {
+              "name": "característica",
+              "value": "Teclado tamaño completo"
+            },
+            {
+              "name": "color",
+              "value": "Rosa"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "038a39d5e0853964b50",
+      "metadata": {
+        "id": "MCO259402178203",
+        "product_id": "MCO18902592",
+        "url": "www.mercadolibre.com.co/mco259402178203",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "728038-MLA95687206971_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico HP Español de color Negro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.2 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.2
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 169900,
+              "currency": "COP"
+            },
+            "formatted": "$169.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 56634,
+              "currency": "COP",
+              "label": "3 cuotas de $56.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": false,
+            "text": "Envío con costo",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "HP"
+            },
+            {
+              "name": "distribución",
+              "value": "Español"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclado compacto"
+            },
+            {
+              "name": "color",
+              "value": "Rosa"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "44f58d669cbee3772a0",
+      "metadata": {
+        "id": "MCO287619829604",
+        "product_id": "MCO18072574",
+        "url": "www.mercadolibre.com.co/mco287619829604",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "716886-MLA92379074819_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Redragon Español de color Blanco",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.8 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.8
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 199900,
+              "currency": "COP"
+            },
+            "formatted": "$199.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 66634,
+              "currency": "COP",
+              "label": "3 cuotas de $66.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Redragon"
+            },
+            {
+              "name": "distribución",
+              "value": "Inglés"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclas silenciosas"
+            },
+            {
+              "name": "color",
+              "value": "Negro"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "f64f7fd633dbdde131c",
+      "metadata": {
+        "id": "MCO229901268605",
+        "product_id": "MCO18701474",
+        "url": "www.mercadolibre.com.co/mco229901268605",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "863587-MLA93700855390_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "OFERTA",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Corsair Español de color Gris grafito",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.2 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.2
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Corsair"
+            },
+            {
+              "name": "distribución",
+              "value": "Español Latino"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclas silenciosas"
+            },
+            {
+              "name": "color",
+              "value": "Negro"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "310275dff6c15c0c8e9",
+      "metadata": {
+        "id": "MCO292486655306",
+        "product_id": "MCO18897546",
+        "url": "www.mercadolibre.com.co/mco292486655306",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "543555-MLA92090237817_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Razer Español de color Negro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.4 de 5 estrellas. +5mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.4
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+5mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 149900,
+              "currency": "COP"
+            },
+            "formatted": "$149.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 49967,
+              "currency": "COP",
+              "label": "3 cuotas de $49.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Razer"
+            },
+            {
+              "name": "distribución",
+              "value": "Inglés"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclado compacto"
+            },
+            {
+              "name": "color",
+              "value": "Negro"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "5125227c3712da86a78",
+      "metadata": {
+        "id": "MCO253993148107",
+        "product_id": "MCO18964047",
+        "url": "www.mercadolibre.com.co/mco253993148107",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "515011-MLA99152052517_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Lenovo Inglés de color Negro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.7 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.7
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Lenovo"
+            },
+            {
+              "name": "distribución",
+              "value": "Español Latino"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclas multimedia"
+            },
+            {
+              "name": "color",
+              "value": "Gris grafito"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "4b27b95e90934833489",
+      "metadata": {
+        "id": "MCO254318955508",
+        "product_id": "MCO18278082",
+        "url": "www.mercadolibre.com.co/mco254318955508",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "734210-MLA99494582061_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Acer Inglés de color Azul",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.9 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.9
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 119900,
+              "currency": "COP"
+            },
+            "formatted": "$119.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 39967,
+              "currency": "COP",
+              "label": "3 cuotas de $39.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Acer"
+            },
+            {
+              "name": "distribución",
+              "value": "Español"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "característica",
+              "value": "Teclado compacto"
+            },
+            {
+              "name": "color",
+              "value": "Rosa"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "5ed03241b4d419b1b67",
+      "metadata": {
+        "id": "MCO268409527709",
+        "product_id": "MCO18274680",
+        "url": "www.mercadolibre.com.co/mco268409527709",
+        "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+        "category_id": "MCO6263",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "799330-MLA94736462531_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "OFERTA",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Kit de teclado y mouse inalámbrico Dell Español de color Blanco",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.6 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.6
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 149900,
+              "currency": "COP"
+            },
+            "formatted": "$149.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 49967,
+              "currency": "COP",
+              "label": "3 cuotas de $49.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Dell"
+            },
+            {
+              "name": "distribución",
+              "value": "Inglés"
+            },
+            {
+              "name": "conectividad",
+              "value": "Bluetooth"
+            },
+            {
+              "name": "característica",
+              "value": "Teclas silenciosas"
+            },
+            {
+              "name": "color",
+              "value": "Gris grafito"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "d7853c1f76eb97706ca",
+      "metadata": {
+        "id": "MCO235668142500",
+        "product_id": "MCO18820391",
+        "url": "www.mercadolibre.com.co/mco235668142500",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "392136-MLA93712367625_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Logitech Láser Compacto para viaje",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.8 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.8
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Logitech"
+            },
+            {
+              "name": "dpi",
+              "value": "1000"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "color",
+              "value": "Gris"
+            },
+            {
+              "name": "tipo",
+              "value": "Óptico"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "dbad3c681d06bd2aa39",
+      "metadata": {
+        "id": "MCO204107835201",
+        "product_id": "MCO18113668",
+        "url": "www.mercadolibre.com.co/mco204107835201",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "631756-MLA99918302102_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "ENVÍO RÁPIDO",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Genius Láser Compacto para viaje",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.9 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.9
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 69900,
+              "currency": "COP"
+            },
+            "formatted": "$69.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 23300,
+              "currency": "COP",
+              "label": "3 cuotas de $23.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Genius"
+            },
+            {
+              "name": "dpi",
+              "value": "1600"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "color",
+              "value": "Rojo"
+            },
+            {
+              "name": "tipo",
+              "value": "Láser"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "0996daeee6f529a2797",
+      "metadata": {
+        "id": "MCO232314247002",
+        "product_id": "MCO18425800",
+        "url": "www.mercadolibre.com.co/mco232314247002",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "945742-MLA90855256552_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Microsoft Láser Ergonómico diestro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.5 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.5
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Microsoft"
+            },
+            {
+              "name": "dpi",
+              "value": "1200"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "color",
+              "value": "Gris"
+            },
+            {
+              "name": "tipo",
+              "value": "Óptico"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "03d75e173e4eaede5fe",
+      "metadata": {
+        "id": "MCO226197630103",
+        "product_id": "MCO18154739",
+        "url": "www.mercadolibre.com.co/mco226197630103",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "371782-MLA93228856718_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico HP Óptico Ambidiestro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.8 de 5 estrellas. +5mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.8
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+5mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 59900,
+              "currency": "COP"
+            },
+            "formatted": "$59.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 19967,
+              "currency": "COP",
+              "label": "3 cuotas de $19.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": false,
+            "text": "Envío con costo",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "HP"
+            },
+            {
+              "name": "dpi",
+              "value": "2400"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "color",
+              "value": "Azul"
+            },
+            {
+              "name": "tipo",
+              "value": "Láser"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "2447c462ddaed16dc0c",
+      "metadata": {
+        "id": "MCO295888026304",
+        "product_id": "MCO18566390",
+        "url": "www.mercadolibre.com.co/mco295888026304",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "600149-MLA95805759868_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "ENVÍO RÁPIDO",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Redragon Láser Compacto para viaje",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.3 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.3
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 59900,
+              "currency": "COP"
+            },
+            "formatted": "$59.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 19967,
+              "currency": "COP",
+              "label": "3 cuotas de $19.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Redragon"
+            },
+            {
+              "name": "dpi",
+              "value": "3200"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "color",
+              "value": "Blanco"
+            },
+            {
+              "name": "tipo",
+              "value": "Láser"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "c5e40c02d4e518ca6ea",
+      "metadata": {
+        "id": "MCO241753224305",
+        "product_id": "MCO18352457",
+        "url": "www.mercadolibre.com.co/mco241753224305",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "453894-MLA95923301988_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Corsair Láser Compacto para viaje",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.5 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.5
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": false,
+            "text": "Envío con costo",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Corsair"
+            },
+            {
+              "name": "dpi",
+              "value": "3200"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "color",
+              "value": "Rojo"
+            },
+            {
+              "name": "tipo",
+              "value": "Óptico"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "10760474f36e8b53593",
+      "metadata": {
+        "id": "MCO283884259906",
+        "product_id": "MCO18683414",
+        "url": "www.mercadolibre.com.co/mco283884259906",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "706794-MLA99929780763_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Razer Láser Ambidiestro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.9 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.9
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 59900,
+              "currency": "COP"
+            },
+            "formatted": "$59.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 19967,
+              "currency": "COP",
+              "label": "3 cuotas de $19.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Razer"
+            },
+            {
+              "name": "dpi",
+              "value": "800"
+            },
+            {
+              "name": "conectividad",
+              "value": "Dual (USB + Bluetooth)"
+            },
+            {
+              "name": "color",
+              "value": "Rojo"
+            },
+            {
+              "name": "tipo",
+              "value": "Óptico"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "1bdb2a0df3dbe4d58fe",
+      "metadata": {
+        "id": "MCO260766544807",
+        "product_id": "MCO18820652",
+        "url": "www.mercadolibre.com.co/mco260766544807",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "556732-MLA96839626408_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Lenovo Láser Ergonómico diestro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.3 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.3
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 89900,
+              "currency": "COP"
+            },
+            "formatted": "$89.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 29967,
+              "currency": "COP",
+              "label": "3 cuotas de $29.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Lenovo"
+            },
+            {
+              "name": "dpi",
+              "value": "1000"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "color",
+              "value": "Rojo"
+            },
+            {
+              "name": "tipo",
+              "value": "Óptico"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "8a880627df7ffe0297c",
+      "metadata": {
+        "id": "MCO238099040108",
+        "product_id": "MCO18836587",
+        "url": "www.mercadolibre.com.co/mco238099040108",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "825391-MLA95339955011_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "OFERTA",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Acer Óptico Ambidiestro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.4 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.4
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 49900,
+              "currency": "COP"
+            },
+            "formatted": "$49.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 16634,
+              "currency": "COP",
+              "label": "3 cuotas de $16.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Acer"
+            },
+            {
+              "name": "dpi",
+              "value": "1600"
+            },
+            {
+              "name": "conectividad",
+              "value": "2.4 GHz (USB)"
+            },
+            {
+              "name": "color",
+              "value": "Azul"
+            },
+            {
+              "name": "tipo",
+              "value": "Láser"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "6a3566f893697b59048",
+      "metadata": {
+        "id": "MCO212955326509",
+        "product_id": "MCO18756321",
+        "url": "www.mercadolibre.com.co/mco212955326509",
+        "domain_id": "MCO-MICE",
+        "category_id": "MCO1714",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "147726-MLA94184564874_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "OFERTA",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Mouse inalámbrico Dell Láser Ergonómico diestro",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.4 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.4
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 69900,
+              "currency": "COP"
+            },
+            "formatted": "$69.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 23300,
+              "currency": "COP",
+              "label": "3 cuotas de $23.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Dell"
+            },
+            {
+              "name": "dpi",
+              "value": "2400"
+            },
+            {
+              "name": "conectividad",
+              "value": "Bluetooth"
+            },
+            {
+              "name": "color",
+              "value": "Azul"
+            },
+            {
+              "name": "tipo",
+              "value": "Láser"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "18f32cf21449273d7ce",
+      "metadata": {
+        "id": "MCO236583021500",
+        "product_id": "MCO18193319",
+        "url": "www.mercadolibre.com.co/mco236583021500",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "564226-MLA96136777415_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor Samsung 24\" QHD (2560x1440) TN 144Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.2 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.2
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 1599900,
+              "currency": "COP"
+            },
+            "formatted": "$1.599.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 533300,
+              "currency": "COP",
+              "label": "3 cuotas de $533.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": false,
+            "text": "Envío con costo",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Samsung"
+            },
+            {
+              "name": "tamaño",
+              "value": "24\""
+            },
+            {
+              "name": "resolución",
+              "value": "QHD (2560x1440)"
+            },
+            {
+              "name": "panel",
+              "value": "TN"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "144Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "HDMI"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "def91799e2786d37484",
+      "metadata": {
+        "id": "MCO216807562201",
+        "product_id": "MCO18002805",
+        "url": "www.mercadolibre.com.co/mco216807562201",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "174878-MLA90256143439_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "MÁS VENDIDO",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor LG 29\" Full HD (1920x1080) TN 60Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.3 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.3
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 1299900,
+              "currency": "COP"
+            },
+            "formatted": "$1.299.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 433300,
+              "currency": "COP",
+              "label": "3 cuotas de $433.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "LG"
+            },
+            {
+              "name": "tamaño",
+              "value": "29\""
+            },
+            {
+              "name": "resolución",
+              "value": "Full HD (1920x1080)"
+            },
+            {
+              "name": "panel",
+              "value": "TN"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "60Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "HDMI + VGA"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "21da80270815fe85df2",
+      "metadata": {
+        "id": "MCO253020857902",
+        "product_id": "MCO18459023",
+        "url": "www.mercadolibre.com.co/mco253020857902",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "592841-MLA95789448659_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor AOC 29\" 4K UHD (3840x2160) VA 60Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.4 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.4
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 1299900,
+              "currency": "COP"
+            },
+            "formatted": "$1.299.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 433300,
+              "currency": "COP",
+              "label": "3 cuotas de $433.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "AOC"
+            },
+            {
+              "name": "tamaño",
+              "value": "29\""
+            },
+            {
+              "name": "resolución",
+              "value": "4K UHD (3840x2160)"
+            },
+            {
+              "name": "panel",
+              "value": "VA"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "60Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "USB-C + HDMI"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "a3c0ed16bfe16849ef3",
+      "metadata": {
+        "id": "MCO233771022403",
+        "product_id": "MCO18264659",
+        "url": "www.mercadolibre.com.co/mco233771022403",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "130271-MLA99617709372_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor Dell 24\" Full HD (1920x1080) IPS 100Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.5 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.5
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 1299900,
+              "currency": "COP"
+            },
+            "formatted": "$1.299.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 433300,
+              "currency": "COP",
+              "label": "3 cuotas de $433.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Dell"
+            },
+            {
+              "name": "tamaño",
+              "value": "24\""
+            },
+            {
+              "name": "resolución",
+              "value": "Full HD (1920x1080)"
+            },
+            {
+              "name": "panel",
+              "value": "IPS"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "100Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "USB-C + HDMI"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "4f98dff7e4c6428da80",
+      "metadata": {
+        "id": "MCO269547298004",
+        "product_id": "MCO18872565",
+        "url": "www.mercadolibre.com.co/mco269547298004",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "396578-MLA97413332538_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor HP 24\" Full HD (1920x1080) TN 144Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.9 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.9
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 499900,
+              "currency": "COP"
+            },
+            "formatted": "$499.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 166634,
+              "currency": "COP",
+              "label": "3 cuotas de $166.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": false,
+            "text": "Envío con costo",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "HP"
+            },
+            {
+              "name": "tamaño",
+              "value": "24\""
+            },
+            {
+              "name": "resolución",
+              "value": "Full HD (1920x1080)"
+            },
+            {
+              "name": "panel",
+              "value": "TN"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "144Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "HDMI"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "7c7d1afcc4f14a3e3e0",
+      "metadata": {
+        "id": "MCO293372770105",
+        "product_id": "MCO18197816",
+        "url": "www.mercadolibre.com.co/mco293372770105",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "857537-MLA94914110094_122025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor ASUS 29\" HD (1366x768) IPS 144Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.4 de 5 estrellas. 500+ vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.4
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "500+ vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 799900,
+              "currency": "COP"
+            },
+            "formatted": "$799.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 266634,
+              "currency": "COP",
+              "label": "3 cuotas de $266.634 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": false,
+            "text": "Envío con costo",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "ASUS"
+            },
+            {
+              "name": "tamaño",
+              "value": "29\""
+            },
+            {
+              "name": "resolución",
+              "value": "HD (1366x768)"
+            },
+            {
+              "name": "panel",
+              "value": "IPS"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "144Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "DisplayPort"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "caf127972d33e5901a1",
+      "metadata": {
+        "id": "MCO292271164706",
+        "product_id": "MCO18559543",
+        "url": "www.mercadolibre.com.co/mco292271164706",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "407618-MLA95834555633_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor Acer 23.8\" Full HD (1920x1080) VA 100Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.7 de 5 estrellas. +1mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.7
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+1mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 999900,
+              "currency": "COP"
+            },
+            "formatted": "$999.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 333300,
+              "currency": "COP",
+              "label": "3 cuotas de $333.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Acer"
+            },
+            {
+              "name": "tamaño",
+              "value": "23.8\""
+            },
+            {
+              "name": "resolución",
+              "value": "Full HD (1920x1080)"
+            },
+            {
+              "name": "panel",
+              "value": "VA"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "100Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "HDMI + DisplayPort"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "7f47e8e80e952eb9d8e",
+      "metadata": {
+        "id": "MCO266540893807",
+        "product_id": "MCO18716318",
+        "url": "www.mercadolibre.com.co/mco266540893807",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "986365-MLA91297602688_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "RECOMENDADO",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor Lenovo 23.8\" QHD (2560x1440) TN 144Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.8 de 5 estrellas. +5mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.8
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+5mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 1299900,
+              "currency": "COP"
+            },
+            "formatted": "$1.299.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 433300,
+              "currency": "COP",
+              "label": "3 cuotas de $433.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "Lenovo"
+            },
+            {
+              "name": "tamaño",
+              "value": "23.8\""
+            },
+            {
+              "name": "resolución",
+              "value": "QHD (2560x1440)"
+            },
+            {
+              "name": "panel",
+              "value": "TN"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "144Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "DisplayPort"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "801f97b7684319e1b42",
+      "metadata": {
+        "id": "MCO270676888408",
+        "product_id": "MCO18415032",
+        "url": "www.mercadolibre.com.co/mco270676888408",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "409445-MLA99993182554_112025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor ViewSonic 27\" Full HD (1920x1080) IPS 144Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.6 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.6
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 599900,
+              "currency": "COP"
+            },
+            "formatted": "$599.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 199967,
+              "currency": "COP",
+              "label": "3 cuotas de $199.967 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "ViewSonic"
+            },
+            {
+              "name": "tamaño",
+              "value": "27\""
+            },
+            {
+              "name": "resolución",
+              "value": "Full HD (1920x1080)"
+            },
+            {
+              "name": "panel",
+              "value": "IPS"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "144Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "DisplayPort"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "POLYCARD",
+    "state": "VISIBLE",
+    "polycard": {
+      "unique_id": "a3e247cb2c083eb8cb3",
+      "metadata": {
+        "id": "MCO286596042709",
+        "product_id": "MCO18309478",
+        "url": "www.mercadolibre.com.co/mco286596042709",
+        "domain_id": "MCO-MONITORS",
+        "category_id": "MCO14407",
+        "vertical_id": "CORE"
+      },
+      "pictures": {
+        "scale": "FILL",
+        "pictures": [
+          {
+            "id": "807617-MLA95299224734_102025"
+          }
+        ],
+        "square": "Q",
+        "alt_text": "Imagen",
+        "ratio": "1.00"
+      },
+      "bookmark": {
+        "alt_text": "Favorito",
+        "alt_text_active": "Agregar a favoritos",
+        "alt_text_inactive": "Eliminar de favoritos",
+        "bookmarked": false
+      },
+      "components": [
+        {
+          "type": "highlight",
+          "id": "highlight",
+          "highlight": {
+            "text": "RECOMENDADO",
+            "styles": {
+              "color_hex": "#FFFFFF",
+              "background_color_hex": "#FF7733"
+            }
+          }
+        },
+        {
+          "type": "title",
+          "id": "title",
+          "title": {
+            "text": "Monitor BenQ 23.8\" QHD (2560x1440) IPS 165Hz",
+            "long_title": false,
+            "title_tag": "h3"
+          }
+        },
+        {
+          "type": "review_compacted",
+          "id": "review_compacted",
+          "review_compacted": {
+            "alt_text": "Calificación 4.6 de 5 estrellas. +10mil vendidos.",
+            "values": [
+              {
+                "key": "rating",
+                "type": "number",
+                "number": {
+                  "value": 4.6
+                }
+              },
+              {
+                "key": "sold_label",
+                "type": "label",
+                "label": {
+                  "text": "+10mil vendidos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "price",
+          "id": "price",
+          "price": {
+            "current_price": {
+              "value": 999900,
+              "currency": "COP"
+            },
+            "formatted": "$999.900",
+            "installments": {
+              "count": 3,
+              "no_interest": true,
+              "amount": 333300,
+              "currency": "COP",
+              "label": "3 cuotas de $333.300 con 0% interés"
+            }
+          }
+        },
+        {
+          "type": "shipping",
+          "id": "shipping",
+          "shipping": {
+            "free": true,
+            "text": "Envío gratis",
+            "promise_type": "none"
+          }
+        },
+        {
+          "type": "attributes",
+          "id": "attributes",
+          "attributes": [
+            {
+              "name": "marca",
+              "value": "BenQ"
+            },
+            {
+              "name": "tamaño",
+              "value": "23.8\""
+            },
+            {
+              "name": "resolución",
+              "value": "QHD (2560x1440)"
+            },
+            {
+              "name": "panel",
+              "value": "IPS"
+            },
+            {
+              "name": "tasa_refresco",
+              "value": "165Hz"
+            },
+            {
+              "name": "puertos",
+              "value": "HDMI + DisplayPort"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "highlight_examples": [
+    {
+      "type": "highlight",
+      "id": "highlight",
+      "highlight": {
+        "text": "MÁS VENDIDO",
+        "priority": 1,
+        "variant": "primary",
+        "styles": {
+          "color_hex": "#FFFFFF",
+          "background_color_hex": "#FF7733"
+        }
+      }
+    },
+    {
+      "type": "highlight",
+      "id": "highlight",
+      "highlight": {
+        "text": "OFERTA",
+        "priority": 2,
+        "variant": "success",
+        "styles": {
+          "color_hex": "#FFFFFF",
+          "background_color_hex": "#00A650"
+        }
+      }
+    },
+    {
+      "type": "highlight",
+      "id": "highlight",
+      "highlight": {
+        "text": "ENVÍO RÁPIDO",
+        "priority": 3,
+        "variant": "info",
+        "styles": {
+          "color_hex": "#FFFFFF",
+          "background_color_hex": "#3483FA"
+        }
+      }
+    }
+  ],
+  "review_compacted_examples": [
+    {
+      "type": "review_compacted",
+      "id": "review_compacted",
+      "review_compacted": {
+        "rating": {
+          "value": 4.8,
+          "max": 5,
+          "count": 356
+        },
+        "sold": {
+          "quantity": 12000,
+          "label": "+10mil vendidos"
+        },
+        "alt_text": "Calificación 4.8 de 5 estrellas basada en 356 opiniones. Más de 10mil vendidos."
+      }
+    },
+    {
+      "type": "review_compacted",
+      "id": "review_compacted",
+      "review_compacted": {
+        "rating": {
+          "value": 4.5,
+          "max": 5,
+          "count": 89
+        },
+        "sold": {
+          "quantity": 1500,
+          "label": "+1mil vendidos"
+        },
+        "alt_text": "Calificación 4.5 de 5 estrellas basada en 89 opiniones. Más de 1mil vendidos."
+      }
+    },
+    {
+      "type": "review_compacted",
+      "id": "review_compacted",
+      "review_compacted": {
+        "rating": {
+          "value": 4.9,
+          "max": 5,
+          "count": 1240
+        },
+        "sold": {
+          "quantity": 25000,
+          "label": "+25mil vendidos"
+        },
+        "alt_text": "Calificación 4.9 de 5 estrellas basada en 1240 opiniones. Más de 25mil vendidos."
+      }
+    }
+  ]
+}
