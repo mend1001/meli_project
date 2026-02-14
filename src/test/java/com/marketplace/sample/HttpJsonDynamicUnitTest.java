@@ -1,4 +1,4 @@
-package com.hackerrank.sample;
+package com.marketplace.sample;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -21,6 +21,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import static java.util.stream.Collectors.toList;
 import java.util.stream.Stream;
+
+import com.marketplace.MarketplaceApplication;
 import javafx.util.Pair;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -51,7 +53,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Application.class)
+@SpringBootTest(classes = MarketplaceApplication.class)
 @WebAppConfiguration
 public class HttpJsonDynamicUnitTest {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
