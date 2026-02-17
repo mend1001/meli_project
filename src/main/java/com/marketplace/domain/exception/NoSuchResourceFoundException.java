@@ -1,11 +1,8 @@
-package com.hackerrank.sample.exception;
+package com.marketplace.domain.exception;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
-@ResponseStatus(HttpStatus.NOT_FOUND)
 public class NoSuchResourceFoundException extends RuntimeException {
-    public NoSuchResourceFoundException(String msg) {
-        super(msg);
+
+    public NoSuchResourceFoundException(String message) {
+        super(message);
     }
 }
