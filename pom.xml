@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <name>JavaSpringBootSample</name>
 
-    <groupId>com.hackerrank</groupId>
-    <artifactId>sample</artifactId>
+    <groupId>marketplace</groupId>
+    <artifactId>marketplace</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
