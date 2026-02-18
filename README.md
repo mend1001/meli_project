@@ -19,7 +19,6 @@ API REST para un marketplace que permite consultar productos y sus detalles, imp
 - [Pruebas](#-pruebas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Manejo de Errores](#-manejo-de-errores)
-- [Contribución](#-contribución)
 - [Licencia](#-licencia)
 - [Contacto](#-contacto)
 
@@ -544,24 +543,6 @@ marketplace-api/
 | `ConflictException` | 409 | Conflicto de datos |
 | `UnprocessableEntityException` | 422 | Entidad no procesable |
 
-## 🤝 Contribución
-
-### ¿Cómo contribuir?
-
-1. **Fork** el repositorio
-2. **Crea una rama** para tu feature
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. **Commit** tus cambios
-   ```bash
-   git commit -m "feat: agregar nueva funcionalidad"
-   ```
-4. **Push** a la rama
-   ```bash
-   git push origin feature/nueva-funcionalidad
-   ```
-5. **Abre un Pull Request**
 
 ### Convenciones de código
 
@@ -609,17 +590,17 @@ of this software and associated documentation files...
 
 ## 📊 Roadmap
 
-### Versión 1.0.0 (Actual)
+### Versión 1.1.0 (Actual)
 - ✅ Consulta de lista de productos
 - ✅ Consulta de detalle de producto
 - ✅ Persistencia dual (SQLite + JSON)
 - ✅ Manejo global de excepciones
 - ✅ Pruebas unitarias (basicas)
 
-### Próximas versiones
-- 🔜 Uso de Lombok para reducir código boilerplate (no implementado en esta versión por incompatibilidad temporal con el IDE  del desarrolladdor)
-- 🔜 Caché con Redis
-- 🔜 Filtros y búsqueda
-- 🔜 Autenticación JWT
-- 🔜 Monitoreo con Actuator
+## 📜 Historial de Cambios
+
+El historial completo del proyecto puede consultarse en:
+
+➡️ [CHANGELOG.md](./CHANGELOG.md)
+
 
