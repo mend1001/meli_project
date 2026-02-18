@@ -1,5 +1,7 @@
 package com.marketplace.infrastructure.adapter.in.rest;
 
+import com.marketplace.domain.model.PageInfo;
+import com.marketplace.domain.model.PagedResponse;
 import com.marketplace.domain.model.ProductCard;
 import com.marketplace.domain.model.ProductDetailResponse;
 import com.marketplace.domain.port.in.GetProductDetailUseCase;
@@ -11,11 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -33,6 +31,7 @@ class ProductControllerTest {
     private ProductController controller;
 
     private List<ProductCard> mockProductCards;
+    private PagedResponse<ProductCard> mockPagedList;
     private ProductDetailResponse mockProductDetail;
 
     private final String ITEM_ID_TECLADO = "MCO203412639600";
@@ -81,6 +80,12 @@ class ProductControllerTest {
 
         mockProductCards = Arrays.asList(tecladoCard, mouseCard);
 
+        // ✅ Response paginada
+        mockPagedList = new PagedResponse<>(
+                mockProductCards,
+                new PageInfo(0, 10, mockProductCards.size(), 1, false, false)
+        );
+
         // Configurar ProductDetailResponse para el detalle
         Map<String, String> detailAttributes = new HashMap<>();
         detailAttributes.put("marca", "Logitech");
@@ -110,46 +115,61 @@ class ProductControllerTest {
     @Test
     void list_WhenCalled_ShouldReturnListOfProducts() {
         // Arrange
-        when(listUseCase.getProductList()).thenReturn(mockProductCards);
+        when(listUseCase.getProductList(0, 10)).thenReturn(mockPagedList);
 
         // Act
-        List<ProductCard> result = controller.list();
+        PagedResponse<ProductCard> result = controller.list(0, 10);
 
         // Assert
         assertNotNull(result);
-        assertEquals(2, result.size());
+        assertNotNull(result.data());
+        assertEquals(2, result.data().size());
 
         // Verificar primer producto
-        ProductCard firstProduct = result.get(0);
+        ProductCard firstProduct = result.data().get(0);
         assertEquals(ITEM_ID_TECLADO, firstProduct.itemId());
         assertEquals("Kit teclado y mouse Logitech Gris Grafito", firstProduct.title());
         assertEquals(89900, firstProduct.priceValue());
         assertTrue(firstProduct.freeShipping());
 
         // Verificar segundo producto
-        ProductCard secondProduct = result.get(1);
+        ProductCard secondProduct = result.data().get(1);
         assertEquals("MCO200000011", secondProduct.itemId());
         assertEquals("Mouse inalámbrico Razer Black", secondProduct.title());
         assertEquals(59900, secondProduct.priceValue());
         assertEquals("ENVÍO RÁPIDO", secondProduct.badgeText());
 
-        verify(listUseCase, times(1)).getProductList();
+        // Metadata para frontend
+        assertEquals(0, result.page().number());
+        assertEquals(10, result.page().size());
+        assertEquals(2, result.page().totalItems());
+        assertEquals(1, result.page().totalPages());
+
+        verify(listUseCase, times(1)).getProductList(0, 10);
         verifyNoInteractions(detailUseCase);
     }
 
     @Test
     void list_WhenNoProducts_ShouldReturnEmptyList() {
         // Arrange
-        when(listUseCase.getProductList()).thenReturn(Collections.emptyList());
+        PagedResponse<ProductCard> empty = new PagedResponse<>(
+                Collections.emptyList(),
+                new PageInfo(0, 10, 0, 0, false, false)
+        );
+
+        when(listUseCase.getProductList(0, 10)).thenReturn(empty);
 
         // Act
-        List<ProductCard> result = controller.list();
+        PagedResponse<ProductCard> result = controller.list(0, 10);
 
         // Assert
         assertNotNull(result);
-        assertTrue(result.isEmpty());
+        assertNotNull(result.data());
+        assertTrue(result.data().isEmpty());
+        assertEquals(0, result.page().totalItems());
+        assertEquals(0, result.page().totalPages());
 
-        verify(listUseCase, times(1)).getProductList();
+        verify(listUseCase, times(1)).getProductList(0, 10);
         verifyNoInteractions(detailUseCase);
     }
 
@@ -207,16 +227,16 @@ class ProductControllerTest {
     @Test
     void list_WhenUseCaseThrowsException_ShouldPropagateException() {
         // Arrange
-        when(listUseCase.getProductList()).thenThrow(new RuntimeException("Error en el caso de uso"));
+        when(listUseCase.getProductList(0, 10)).thenThrow(new RuntimeException("Error en el caso de uso"));
 
         // Act & Assert
         RuntimeException exception = assertThrows(
                 RuntimeException.class,
-                () -> controller.list()
+                () -> controller.list(0, 10)
         );
 
         assertEquals("Error en el caso de uso", exception.getMessage());
-        verify(listUseCase, times(1)).getProductList();
+        verify(listUseCase, times(1)).getProductList(0, 10);
     }
 
     @Test
@@ -253,15 +273,15 @@ class ProductControllerTest {
     @Test
     void list_ShouldReturnSameListFromUseCase() {
         // Arrange
-        List<ProductCard> expectedList = mockProductCards;
-        when(listUseCase.getProductList()).thenReturn(expectedList);
+        PagedResponse<ProductCard> expected = mockPagedList;
+        when(listUseCase.getProductList(0, 10)).thenReturn(expected);
 
         // Act
-        List<ProductCard> result = controller.list();
+        PagedResponse<ProductCard> result = controller.list(0, 10);
 
         // Assert
-        assertSame(expectedList, result); // Verifica que es la misma referencia
-        verify(listUseCase, times(1)).getProductList();
+        assertSame(expected, result);
+        verify(listUseCase, times(1)).getProductList(0, 10);
     }
 
     @Test
@@ -274,22 +294,22 @@ class ProductControllerTest {
         ProductDetailResponse result = controller.detail(ITEM_ID_TECLADO);
 
         // Assert
-        assertSame(expectedResponse, result); // Verifica que es la misma referencia
+        assertSame(expectedResponse, result);
         verify(detailUseCase, times(1)).getDetail(ITEM_ID_TECLADO);
     }
 
     @Test
     void list_WhenCalledMultipleTimes_ShouldCallUseCaseEachTime() {
         // Arrange
-        when(listUseCase.getProductList()).thenReturn(mockProductCards);
+        when(listUseCase.getProductList(0, 10)).thenReturn(mockPagedList);
 
         // Act
-        controller.list();
-        controller.list();
-        controller.list();
+        controller.list(0, 10);
+        controller.list(0, 10);
+        controller.list(0, 10);
 
         // Assert
-        verify(listUseCase, times(3)).getProductList();
+        verify(listUseCase, times(3)).getProductList(0, 10);
     }
 
     @Test
@@ -345,18 +365,19 @@ class ProductControllerTest {
     @Test
     void listAndDetail_ShouldUseDifferentUseCases() {
         // Arrange
-        when(listUseCase.getProductList()).thenReturn(mockProductCards);
+        when(listUseCase.getProductList(0, 10)).thenReturn(mockPagedList);
         when(detailUseCase.getDetail(ITEM_ID_TECLADO)).thenReturn(mockProductDetail);
 
         // Act
-        List<ProductCard> listResult = controller.list();
+        PagedResponse<ProductCard> listResult = controller.list(0, 10);
         ProductDetailResponse detailResult = controller.detail(ITEM_ID_TECLADO);
 
         // Assert
         assertNotNull(listResult);
         assertNotNull(detailResult);
 
-        verify(listUseCase, times(1)).getProductList();
+        verify(listUseCase, times(1)).getProductList(0, 10);
         verify(detailUseCase, times(1)).getDetail(ITEM_ID_TECLADO);
     }
 }
+

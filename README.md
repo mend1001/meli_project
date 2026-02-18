@@ -7,6 +7,7 @@
 API REST para un marketplace que permite consultar productos y sus detalles, implementando arquitectura hexagonal con persistencia dual (SQLite + JSON).
 
 ## 📋 Tabla de Contenidos
+- [Arquitectura](#-arquitectura)
 - [Características](#-características)
 - [Tecnologías](#-tecnologías)
 - [Requisitos Previos](#-requisitos-previos)
@@ -22,6 +23,18 @@ API REST para un marketplace que permite consultar productos y sus detalles, imp
 - [Licencia](#-licencia)
 - [Contacto](#-contacto)
 
+# 🧱 Arquitectura
+
+## 🏛 Arquitectura Hexagonal (Ports & Adapters)
+
+Se eligió Arquitectura Hexagonal porque:
+
+- Permite aislar el dominio del framework
+- Facilita pruebas unitarias reales
+- Permite cambiar infraestructura sin impactar negocio
+- Mejora mantenibilidad y escalabilidad
+- Es ampliamente utilizada en entornos empresariales
+
 ## ✨ Características
 
 - ✅ **Arquitectura Hexagonal/Clean** - Separación clara de capas y responsabilidades
@@ -30,7 +43,7 @@ API REST para un marketplace que permite consultar productos y sus detalles, imp
 - ✅ **Manejo Global de Excepciones** - Respuestas consistentes para errores
 - ✅ **Pruebas Unitarias** - Cobertura completa con JUnit 5 y Mockito
 - ✅ **Datos de Ejemplo** - Scripts SQL y JSON para pruebas
-- ✅ **Documentación de API** - Endpoints documentados con ejemplos
+- ✅ **Documentación de API** - Endpoints documentados con swagger
 
 ## 🛠️ Tecnologías
 
@@ -261,45 +274,56 @@ Obtiene todos los productos del catálogo con información resumida.
 
 **Respuesta exitosa (200 OK)**
 ```json
-[
-  {
-    "itemId": "MCO203412639600",
-    "productId": "MCO18031244",
-    "title": "Kit teclado y mouse Logitech Gris Grafito",
-    "priceValue": 89900,
-    "currency": "COP",
-    "freeShipping": true,
-    "pictureId": "498382-MLA94710360983_112025",
-    "badgeText": null,
-    "ratingValue": 4.3,
-    "soldLabel": "+1mil vendidos",
-    "attributes": {
-      "marca": "Logitech",
-      "distribución": "Español Latino",
-      "conectividad": "Bluetooth",
-      "color": "Negro"
+{
+  "data": [
+    {
+      "itemId": "MCO203412639600",
+      "productId": "MCO18031244",
+      "title": "Kit de teclado y mouse inalámbrico Logitech Español Latino de color Gris grafito",
+      "priceValue": 89900,
+      "currency": "COP",
+      "freeShipping": true,
+      "pictureId": "498382-MLA94710360983_112025",
+      "badgeText": null,
+      "ratingValue": null,
+      "soldLabel": null,
+      "attributes": {
+        "marca": "Logitech",
+        "distribución": "Español Latino",
+        "conectividad": "Bluetooth",
+        "característica": "Resistente a salpicaduras",
+        "color": "Negro"
+      }
+    },
+    {
+      "itemId": "MCO289056647601",
+      "productId": "MCO18659176",
+      "title": "Kit de teclado y mouse inalámbrico Genius Español Latino de color Blanco",
+      "priceValue": 199900,
+      "currency": "COP",
+      "freeShipping": true,
+      "pictureId": "738720-MLA92727210979_122025",
+      "badgeText": null,
+      "ratingValue": null,
+      "soldLabel": null,
+      "attributes": {
+        "marca": "Genius",
+        "distribución": "Español",
+        "conectividad": "Dual (USB + Bluetooth)",
+        "característica": "Teclado compacto",
+        "color": "Rosa"
+      }
     }
-  },
-  {
-    "itemId": "MCO200000011",
-    "productId": "MCO20000001",
-    "title": "Mouse inalámbrico Razer Black",
-    "priceValue": 59900,
-    "currency": "COP",
-    "freeShipping": true,
-    "pictureId": "631756-MLA99918302102_112025",
-    "badgeText": "ENVÍO RÁPIDO",
-    "ratingValue": 4.9,
-    "soldLabel": "+1mil vendidos",
-    "attributes": {
-      "marca": "Razer",
-      "dpi": "1600",
-      "conectividad": "2.4 GHz (USB)",
-      "color": "Negro",
-      "tipo": "Óptico"
-    }
+  ],
+  "page": {
+    "number": 0,
+    "size": 10,
+    "totalItems": 30,
+    "totalPages": 3,
+    "hasNext": true,
+    "hasPrev": false
   }
-]
+}
 ```
 
 ### 2. Obtener detalle de producto
@@ -451,7 +475,9 @@ marketplace-api/
 │   │   │   │   ├── model/
 │   │   │   │   │   ├── Product.java
 │   │   │   │   │   ├── ProductCard.java
-│   │   │   │   │   └── ProductDetailResponse.java
+│   │   │   │   │   ├── ProductDetailResponse.java
+│   │   │   │   │   ├── PagedResponse.java
+│   │   │   │   │   └── PageMetadata.java
 │   │   │   │   └── port/
 │   │   │   │       ├── in/
 │   │   │   │       │   ├── GetProductDetailUseCase.java
@@ -588,9 +614,10 @@ of this software and associated documentation files...
 - ✅ Consulta de detalle de producto
 - ✅ Persistencia dual (SQLite + JSON)
 - ✅ Manejo global de excepciones
-- ✅ Pruebas unitarias completas
+- ✅ Pruebas unitarias (basicas)
 
 ### Próximas versiones
+- 🔜 Uso de Lombok para reducir código boilerplate (no implementado en esta versión por incompatibilidad temporal con el IDE  del desarrolladdor)
 - 🔜 Caché con Redis
 - 🔜 Filtros y búsqueda
 - 🔜 Autenticación JWT

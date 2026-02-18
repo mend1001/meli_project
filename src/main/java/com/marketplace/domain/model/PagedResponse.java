@@ -1,0 +1,10 @@
+package com.marketplace.domain.model;
+
+import java.util.List;
+
+public record PagedResponse<T>(
+        List<T> data,
+        PageInfo page
+) {}
+
+
