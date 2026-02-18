@@ -7,6 +7,7 @@
 API REST para un marketplace que permite consultar productos y sus detalles, implementando arquitectura hexagonal con persistencia dual (SQLite + JSON).
 
 ## 📋 Tabla de Contenidos
+- [Arquitectura](#-arquitectura)
 - [Características](#-características)
 - [Tecnologías](#-tecnologías)
 - [Requisitos Previos](#-requisitos-previos)
@@ -18,9 +19,20 @@ API REST para un marketplace que permite consultar productos y sus detalles, imp
 - [Pruebas](#-pruebas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Manejo de Errores](#-manejo-de-errores)
-- [Contribución](#-contribución)
 - [Licencia](#-licencia)
 - [Contacto](#-contacto)
+
+# 🧱 Arquitectura
+
+## 🏛 Arquitectura Hexagonal (Ports & Adapters)
+
+Se eligió Arquitectura Hexagonal porque:
+
+- Permite aislar el dominio del framework
+- Facilita pruebas unitarias reales
+- Permite cambiar infraestructura sin impactar negocio
+- Mejora mantenibilidad y escalabilidad
+- Es ampliamente utilizada en entornos empresariales
 
 ## ✨ Características
 
@@ -30,7 +42,7 @@ API REST para un marketplace que permite consultar productos y sus detalles, imp
 - ✅ **Manejo Global de Excepciones** - Respuestas consistentes para errores
 - ✅ **Pruebas Unitarias** - Cobertura completa con JUnit 5 y Mockito
 - ✅ **Datos de Ejemplo** - Scripts SQL y JSON para pruebas
-- ✅ **Documentación de API** - Endpoints documentados con ejemplos
+- ✅ **Documentación de API** - Endpoints documentados con swagger
 
 ## 🛠️ Tecnologías
 
@@ -147,7 +159,108 @@ curl http://localhost:8080/mp/products
 ```
 
 ## 📡 API Endpoints
+## 📖 Documentación Interactiva con Swagger/OpenAPI
 
+El proyecto utiliza **Springdoc OpenAPI** para generar documentación interactiva de los endpoints REST. Esto permite explorar y probar la API directamente desde el navegador.
+
+### 🚀 Acceso a la documentación
+
+Una vez que la aplicación esté en ejecución, puedes acceder a:
+
+| Recurso | URL | Descripción |
+|---------|-----|-------------|
+| **Swagger UI** | `http://localhost:8080/swagger-ui.html` | Interfaz gráfica interactiva para explorar y probar los endpoints |
+| **Especificación OpenAPI** | `http://localhost:8080/v3/api-docs` | Documentación en formato JSON (estándar OpenAPI) |
+
+### 🛠️ Configuración implementada
+
+#### Dependencia en `pom.xml`
+```xml
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.6.0</version>
+</dependency>
+```
+
+#### Configuración en `application.properties`
+```properties
+# Springdoc OpenAPI Configuration
+springdoc.api-docs.enabled=true
+springdoc.api-docs.path=/v3/api-docs
+springdoc.swagger-ui.enabled=true
+springdoc.swagger-ui.path=/swagger-ui.html
+```
+
+### 📋 Anotaciones utilizadas
+
+Para enriquecer la documentación, se han utilizado las siguientes anotaciones:
+
+| Anotación | Propósito | Ejemplo de uso |
+|-----------|-----------|----------------|
+| `@Tag` | Describe un controlador (grupo de endpoints) | `@Tag(name = "Productos", description = "Endpoints para gestión de productos")` |
+| `@Operation` | Describe un endpoint específico | `@Operation(summary = "Listar productos", description = "Obtiene lista resumida")` |
+| `@ApiResponses` | Documenta los posibles códigos de respuesta | `@ApiResponse(responseCode = "404", description = "Producto no encontrado")` |
+| `@Parameter` | Describe un parámetro de la petición | `@Parameter(description = "ID del producto", example = "MCO203412639600")` |
+| `@Schema` | Define el esquema de un modelo de datos | `@Schema(implementation = ProductCard.class)` |
+
+### 🎨 Personalización global
+
+El proyecto incluye una configuración personalizada que define metadatos globales de la API:
+
+```java
+@Configuration
+public class OpenAPIConfig {
+    
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .servers(List.of(
+                        new Server().url("http://localhost:8080")
+                                    .description("Servidor de Desarrollo Local")
+                ))
+                .info(new Info()
+                        .title("Marketplace API")
+                        .description("API REST para marketplace con arquitectura hexagonal")
+                        .version("1.0.0")
+                        .contact(new Contact()
+                                .name("Tu Nombre o Equipo")
+                                .email("tu.email@ejemplo.com"))
+                        .license(new License()
+                                .name("MIT License")
+                                .url("https://opensource.org/licenses/MIT")));
+    }
+}
+```
+
+### 🔍 Ejemplo de documentación generada
+
+La documentación interactiva permite:
+
+1. **Visualizar todos los endpoints** disponibles con sus métodos HTTP
+2. **Ver los modelos de datos** (`ProductCard`, `ProductDetailResponse`)
+3. **Probar los endpoints** directamente desde el navegador
+4. **Descargar la especificación** OpenAPI para usar en otras herramientas
+
+### 📸 Captura de pantalla (opcional)
+
+```
+[Swagger UI mostraría algo similar a esto:
+
+GET /mp/products - Listar todos los productos
+GET /mp/products/{id} - Obtener detalle de un producto
+
+Con secciones desplegables para ver parámetros, respuestas y probar los endpoints]
+```
+
+### ✅ Beneficios de esta implementación
+
+- **Documentación viva**: Siempre sincronizada con el código
+- **Interactiva**: Permite probar los endpoints sin herramientas externas
+- **Estandarizada**: Sigue la especificación OpenAPI 3.0
+- **Profesional**: Mejora la experiencia de otros desarrolladores que consuman la API
+- **Automatizada**: Se genera automáticamente a partir de las anotaciones
+- 
 ### Base URL
 ```
 http://localhost:8080/mp
@@ -160,45 +273,56 @@ Obtiene todos los productos del catálogo con información resumida.
 
 **Respuesta exitosa (200 OK)**
 ```json
-[
-  {
-    "itemId": "MCO203412639600",
-    "productId": "MCO18031244",
-    "title": "Kit teclado y mouse Logitech Gris Grafito",
-    "priceValue": 89900,
-    "currency": "COP",
-    "freeShipping": true,
-    "pictureId": "498382-MLA94710360983_112025",
-    "badgeText": null,
-    "ratingValue": 4.3,
-    "soldLabel": "+1mil vendidos",
-    "attributes": {
-      "marca": "Logitech",
-      "distribución": "Español Latino",
-      "conectividad": "Bluetooth",
-      "color": "Negro"
+{
+  "data": [
+    {
+      "itemId": "MCO203412639600",
+      "productId": "MCO18031244",
+      "title": "Kit de teclado y mouse inalámbrico Logitech Español Latino de color Gris grafito",
+      "priceValue": 89900,
+      "currency": "COP",
+      "freeShipping": true,
+      "pictureId": "498382-MLA94710360983_112025",
+      "badgeText": null,
+      "ratingValue": null,
+      "soldLabel": null,
+      "attributes": {
+        "marca": "Logitech",
+        "distribución": "Español Latino",
+        "conectividad": "Bluetooth",
+        "característica": "Resistente a salpicaduras",
+        "color": "Negro"
+      }
+    },
+    {
+      "itemId": "MCO289056647601",
+      "productId": "MCO18659176",
+      "title": "Kit de teclado y mouse inalámbrico Genius Español Latino de color Blanco",
+      "priceValue": 199900,
+      "currency": "COP",
+      "freeShipping": true,
+      "pictureId": "738720-MLA92727210979_122025",
+      "badgeText": null,
+      "ratingValue": null,
+      "soldLabel": null,
+      "attributes": {
+        "marca": "Genius",
+        "distribución": "Español",
+        "conectividad": "Dual (USB + Bluetooth)",
+        "característica": "Teclado compacto",
+        "color": "Rosa"
+      }
     }
-  },
-  {
-    "itemId": "MCO200000011",
-    "productId": "MCO20000001",
-    "title": "Mouse inalámbrico Razer Black",
-    "priceValue": 59900,
-    "currency": "COP",
-    "freeShipping": true,
-    "pictureId": "631756-MLA99918302102_112025",
-    "badgeText": "ENVÍO RÁPIDO",
-    "ratingValue": 4.9,
-    "soldLabel": "+1mil vendidos",
-    "attributes": {
-      "marca": "Razer",
-      "dpi": "1600",
-      "conectividad": "2.4 GHz (USB)",
-      "color": "Negro",
-      "tipo": "Óptico"
-    }
+  ],
+  "page": {
+    "number": 0,
+    "size": 10,
+    "totalItems": 30,
+    "totalPages": 3,
+    "hasNext": true,
+    "hasPrev": false
   }
-]
+}
 ```
 
 ### 2. Obtener detalle de producto
@@ -350,7 +474,9 @@ marketplace-api/
 │   │   │   │   ├── model/
 │   │   │   │   │   ├── Product.java
 │   │   │   │   │   ├── ProductCard.java
-│   │   │   │   │   └── ProductDetailResponse.java
+│   │   │   │   │   ├── ProductDetailResponse.java
+│   │   │   │   │   ├── PagedResponse.java
+│   │   │   │   │   └── PageMetadata.java
 │   │   │   │   └── port/
 │   │   │   │       ├── in/
 │   │   │   │       │   ├── GetProductDetailUseCase.java
@@ -417,24 +543,6 @@ marketplace-api/
 | `ConflictException` | 409 | Conflicto de datos |
 | `UnprocessableEntityException` | 422 | Entidad no procesable |
 
-## 🤝 Contribución
-
-### ¿Cómo contribuir?
-
-1. **Fork** el repositorio
-2. **Crea una rama** para tu feature
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. **Commit** tus cambios
-   ```bash
-   git commit -m "feat: agregar nueva funcionalidad"
-   ```
-4. **Push** a la rama
-   ```bash
-   git push origin feature/nueva-funcionalidad
-   ```
-5. **Abre un Pull Request**
 
 ### Convenciones de código
 
@@ -482,16 +590,17 @@ of this software and associated documentation files...
 
 ## 📊 Roadmap
 
-### Versión 1.0.0 (Actual)
+### Versión 1.1.0 (Actual)
 - ✅ Consulta de lista de productos
 - ✅ Consulta de detalle de producto
 - ✅ Persistencia dual (SQLite + JSON)
 - ✅ Manejo global de excepciones
-- ✅ Pruebas unitarias completas
+- ✅ Pruebas unitarias (basicas)
 
-### Próximas versiones
-- 🔜 Caché con Redis
-- 🔜 Filtros y búsqueda
-- 🔜 Autenticación JWT
-- 🔜 Monitoreo con Actuator
+## 📜 Historial de Cambios
+
+El historial completo del proyecto puede consultarse en:
+
+➡️ [CHANGELOG.md](./CHANGELOG.md)
+
 

@@ -1,22 +1,25 @@
 package com.marketplace.application.service;
 
+import com.marketplace.domain.exception.BadResourceRequestException;
+import com.marketplace.domain.model.PagedResponse;
+import com.marketplace.domain.model.PageInfo;
 import com.marketplace.domain.model.ProductCard;
 import com.marketplace.domain.port.out.ProductCatalogRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.ArrayList;
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.times;
 
 @ExtendWith(MockitoExtension.class)
 class GetProductListServiceTest {
@@ -24,12 +27,10 @@ class GetProductListServiceTest {
     @Mock
     private ProductCatalogRepository repository;
 
-    @InjectMocks
     private GetProductListService service;
 
-    private List<ProductCard> mockProductCards;
+    private List<ProductCard> mockProducts;
 
-    // Constantes para los datos de prueba
     private final String ITEM_ID_TECLADO = "MCO203412639600";
     private final String ITEM_ID_MOUSE = "MCO200000011";
     private final String ITEM_ID_MONITOR = "MCO300000011";
@@ -40,6 +41,8 @@ class GetProductListServiceTest {
 
     @BeforeEach
     void setUp() {
+        service = new GetProductListService(repository);
+
         // Crear atributos para el teclado
         Map<String, String> attributesTeclado = new HashMap<>();
         attributesTeclado.put("marca", "Logitech");
@@ -99,238 +102,186 @@ class GetProductListServiceTest {
                 1599900,
                 "COP",
                 false,
-                "564226-MLA96136777415_122025",
+                "564226-MLA96136777415_112025",
                 null,
                 4.2,
                 "+10mil vendidos",
                 attributesMonitor
         );
 
-        mockProductCards = Arrays.asList(tecladoCard, mouseCard, monitorCard);
+        mockProducts = List.of(tecladoCard, mouseCard, monitorCard);
     }
 
     @Test
-    void getProductList_WhenRepositoryHasProducts_ShouldReturnAllProducts() {
+    void shouldReturnFirstPageWithTwoItems() {
         // Arrange
-        when(repository.findAll()).thenReturn(mockProductCards);
+        when(repository.findAll()).thenReturn(mockProducts);
 
         // Act
-        List<ProductCard> result = service.getProductList();
+        PagedResponse<ProductCard> response = service.getProductList(0, 2);
 
         // Assert
-        assertNotNull(result);
-        assertEquals(3, result.size());
+        assertThat(response).isNotNull();
+        assertThat(response.data()).hasSize(2);
 
         // Verificar primer producto (teclado)
-        ProductCard teclado = result.get(0);
-        assertEquals(ITEM_ID_TECLADO, teclado.itemId());
-        assertEquals(PRODUCT_ID_TECLADO, teclado.productId());
-        assertEquals("Kit teclado y mouse Logitech Gris Grafito", teclado.title());
-        assertEquals(89900, teclado.priceValue());
-        assertEquals("COP", teclado.currency());
-        assertTrue(teclado.freeShipping());
-        assertEquals("498382-MLA94710360983_112025", teclado.pictureId());
-        assertNull(teclado.badgeText());
-        assertEquals(4.3, teclado.ratingValue());
-        assertEquals("+1mil vendidos", teclado.soldLabel());
-
-        Map<String, String> tecladoAttrs = teclado.attributes();
-        assertEquals(4, tecladoAttrs.size());
-        assertEquals("Logitech", tecladoAttrs.get("marca"));
+        ProductCard firstProduct = response.data().get(0);
+        assertThat(firstProduct.itemId()).isEqualTo(ITEM_ID_TECLADO);
+        assertThat(firstProduct.title()).isEqualTo("Kit teclado y mouse Logitech Gris Grafito");
+        assertThat(firstProduct.priceValue()).isEqualTo(89900);
 
         // Verificar segundo producto (mouse)
-        ProductCard mouse = result.get(1);
-        assertEquals(ITEM_ID_MOUSE, mouse.itemId());
-        assertEquals(PRODUCT_ID_MOUSE, mouse.productId());
-        assertEquals("Mouse inalámbrico Razer Black", mouse.title());
-        assertEquals(59900, mouse.priceValue());
-        assertEquals("ENVÍO RÁPIDO", mouse.badgeText());
-        assertEquals(4.9, mouse.ratingValue());
+        ProductCard secondProduct = response.data().get(1);
+        assertThat(secondProduct.itemId()).isEqualTo(ITEM_ID_MOUSE);
+        assertThat(secondProduct.title()).isEqualTo("Mouse inalámbrico Razer Black");
+        assertThat(secondProduct.badgeText()).isEqualTo("ENVÍO RÁPIDO");
+
+        // Verificar información de paginación
+        assertThat(response.page().number()).isEqualTo(0);
+        assertThat(response.page().size()).isEqualTo(2);
+        assertThat(response.page().totalItems()).isEqualTo(3);
+        assertThat(response.page().totalPages()).isEqualTo(2);
+        assertThat(response.page().hasNext()).isTrue();
+        assertThat(response.page().hasPrev()).isFalse();
+
+        verify(repository, times(1)).findAll();
+    }
+
+    @Test
+    void shouldReturnSecondPageWithOneItem() {
+        // Arrange
+        when(repository.findAll()).thenReturn(mockProducts);
+
+        // Act
+        PagedResponse<ProductCard> response = service.getProductList(1, 2);
+
+        // Assert
+        assertThat(response).isNotNull();
+        assertThat(response.data()).hasSize(1);
 
         // Verificar tercer producto (monitor)
-        ProductCard monitor = result.get(2);
-        assertEquals(ITEM_ID_MONITOR, monitor.itemId());
-        assertEquals(PRODUCT_ID_MONITOR, monitor.productId());
-        assertEquals("Monitor Samsung 24 pulgadas", monitor.title());
-        assertEquals(1599900, monitor.priceValue());
-        assertFalse(monitor.freeShipping());
-        assertEquals(4.2, monitor.ratingValue());
-        assertEquals("+10mil vendidos", monitor.soldLabel());
+        ProductCard product = response.data().get(0);
+        assertThat(product.itemId()).isEqualTo(ITEM_ID_MONITOR);
+        assertThat(product.title()).isEqualTo("Monitor Samsung 24 pulgadas");
+        assertThat(product.priceValue()).isEqualTo(1599900);
+        assertThat(product.freeShipping()).isFalse();
+
+        // Verificar información de paginación
+        assertThat(response.page().number()).isEqualTo(1);
+        assertThat(response.page().size()).isEqualTo(2);
+        assertThat(response.page().totalItems()).isEqualTo(3);
+        assertThat(response.page().totalPages()).isEqualTo(2);
+        assertThat(response.page().hasNext()).isFalse();
+        assertThat(response.page().hasPrev()).isTrue();
 
         verify(repository, times(1)).findAll();
     }
 
     @Test
-    void getProductList_WhenRepositoryReturnsEmptyList_ShouldReturnEmptyList() {
+    void shouldReturnAllItemsWhenSizeGreaterThanTotal() {
         // Arrange
-        when(repository.findAll()).thenReturn(Collections.emptyList());
+        when(repository.findAll()).thenReturn(mockProducts);
 
         // Act
-        List<ProductCard> result = service.getProductList();
+        PagedResponse<ProductCard> response = service.getProductList(0, 10);
 
         // Assert
-        assertNotNull(result);
-        assertTrue(result.isEmpty());
+        assertThat(response).isNotNull();
+        assertThat(response.data()).hasSize(3);
+
+        assertThat(response.page().number()).isEqualTo(0);
+        assertThat(response.page().size()).isEqualTo(10);
+        assertThat(response.page().totalItems()).isEqualTo(3);
+        assertThat(response.page().totalPages()).isEqualTo(1);
+        assertThat(response.page().hasNext()).isFalse();
+        assertThat(response.page().hasPrev()).isFalse();
 
         verify(repository, times(1)).findAll();
     }
 
     @Test
-    void getProductList_WhenRepositoryReturnsSingleProduct_ShouldReturnListWithOneProduct() {
+    void shouldReturnEmptyWhenPageOutOfRange() {
         // Arrange
-        Map<String, String> attributes = new HashMap<>();
-        attributes.put("marca", "Logitech");
-        attributes.put("color", "Negro");
-
-        ProductCard singleProduct = new ProductCard(
-                ITEM_ID_TECLADO,
-                PRODUCT_ID_TECLADO,
-                "Kit teclado y mouse Logitech Gris Grafito",
-                89900,
-                "COP",
-                true,
-                "498382-MLA94710360983_112025",
-                null,
-                4.3,
-                "+1mil vendidos",
-                attributes
-        );
-
-        when(repository.findAll()).thenReturn(Collections.singletonList(singleProduct));
+        when(repository.findAll()).thenReturn(mockProducts);
 
         // Act
-        List<ProductCard> result = service.getProductList();
+        PagedResponse<ProductCard> response = service.getProductList(5, 2);
 
         // Assert
-        assertNotNull(result);
-        assertEquals(1, result.size());
+        assertThat(response).isNotNull();
+        assertThat(response.data()).isEmpty();
 
-        ProductCard product = result.get(0);
-        assertEquals(ITEM_ID_TECLADO, product.itemId());
-        assertEquals("Kit teclado y mouse Logitech Gris Grafito", product.title());
-        assertEquals(89900, product.priceValue());
+        assertThat(response.page().number()).isEqualTo(5);
+        assertThat(response.page().size()).isEqualTo(2);
+        assertThat(response.page().totalItems()).isEqualTo(3);
+        assertThat(response.page().totalPages()).isEqualTo(2);
+        assertThat(response.page().hasNext()).isFalse();
+        assertThat(response.page().hasPrev()).isTrue();
 
         verify(repository, times(1)).findAll();
     }
 
     @Test
-    void getProductList_WhenRepositoryReturnsProductsWithNullFields_ShouldHandleGracefully() {
+    void shouldReturnEmptyWhenRepositoryIsEmpty() {
         // Arrange
-        Map<String, String> emptyAttributes = new HashMap<>();
-
-        ProductCard productWithNulls = new ProductCard(
-                ITEM_ID_TECLADO,
-                PRODUCT_ID_TECLADO,
-                "Producto con campos null",
-                89900,
-                "COP",
-                null,           // freeShipping null
-                null,           // pictureId null
-                null,           // badgeText null
-                null,           // ratingValue null
-                null,           // soldLabel null
-                emptyAttributes  // attributes vacío
-        );
-
-        when(repository.findAll()).thenReturn(Collections.singletonList(productWithNulls));
+        when(repository.findAll()).thenReturn(List.of());
 
         // Act
-        List<ProductCard> result = service.getProductList();
+        PagedResponse<ProductCard> response = service.getProductList(0, 10);
 
         // Assert
-        assertNotNull(result);
-        assertEquals(1, result.size());
+        assertThat(response).isNotNull();
+        assertThat(response.data()).isEmpty();
 
-        ProductCard product = result.get(0);
-        assertEquals(ITEM_ID_TECLADO, product.itemId());
-        assertEquals("Producto con campos null", product.title());
-        assertEquals(89900, product.priceValue());
-        assertEquals("COP", product.currency());
-
-        // Verificar campos null
-        assertNull(product.freeShipping());
-        assertNull(product.pictureId());
-        assertNull(product.badgeText());
-        assertNull(product.ratingValue());
-        assertNull(product.soldLabel());
-
-        // Verificar attributes vacío
-        assertNotNull(product.attributes());
-        assertTrue(product.attributes().isEmpty());
+        assertThat(response.page().number()).isEqualTo(0);
+        assertThat(response.page().size()).isEqualTo(10);
+        assertThat(response.page().totalItems()).isEqualTo(0);
+        assertThat(response.page().totalPages()).isEqualTo(0);
+        assertThat(response.page().hasNext()).isFalse();
+        assertThat(response.page().hasPrev()).isFalse();
 
         verify(repository, times(1)).findAll();
     }
 
     @Test
-    void getProductList_WhenRepositoryThrowsException_ShouldPropagateException() {
-        // Arrange
-        when(repository.findAll()).thenThrow(new RuntimeException("Error al acceder al repositorio"));
-
-        // Act & Assert
-        RuntimeException exception = assertThrows(
-                RuntimeException.class,
-                () -> service.getProductList()
-        );
-
-        assertEquals("Error al acceder al repositorio", exception.getMessage());
-
-        verify(repository, times(1)).findAll();
+    void shouldThrowWhenPageIsNegative() {
+        assertThatThrownBy(() -> service.getProductList(-1, 10))
+                .isInstanceOf(BadResourceRequestException.class)
+                .hasMessage("Invalid 'page'. Must be >= 0");
     }
 
     @Test
-    void getProductList_VerifyRepositoryInteraction() {
-        // Arrange
-        when(repository.findAll()).thenReturn(mockProductCards);
-
-        // Act
-        service.getProductList();
-
-        // Assert - Verificar que se llamó al repositorio exactamente una vez
-        verify(repository, times(1)).findAll();
-        verifyNoMoreInteractions(repository);
+    void shouldThrowWhenSizeIsNegative() {
+        assertThatThrownBy(() -> service.getProductList(0, -5))
+                .isInstanceOf(BadResourceRequestException.class)
+                .hasMessage("Invalid 'size'. Must be >= 1"); // Cambiar el mensaje
     }
 
     @Test
-    void getProductList_ShouldReturnUnmodifiableList() {
-        // Arrange
-        when(repository.findAll()).thenReturn(mockProductCards);
-
-        // Act
-        List<ProductCard> result = service.getProductList();
-
-        // Assert - Intentar modificar la lista debería lanzar excepción
-        // Nota: Esto depende de la implementación del repositorio
-        assertNotNull(result);
-
-        try {
-            result.add(null);
-            // Si no lanza excepción, la lista es modificable
-            // Este test es informativo, no necesariamente un error
-        } catch (UnsupportedOperationException e) {
-            // La lista es inmutable, lo cual es bueno
-            assertTrue(true);
-        }
-    }
-
-    @Test
-    void getProductList_WithLargeDataset_ShouldReturnAllProducts() {
+    void shouldHandleLargeDataset() {
         // Arrange
         List<ProductCard> largeList = createLargeProductList(100);
         when(repository.findAll()).thenReturn(largeList);
 
         // Act
-        List<ProductCard> result = service.getProductList();
+        PagedResponse<ProductCard> response = service.getProductList(3, 20);
 
         // Assert
-        assertNotNull(result);
-        assertEquals(100, result.size());
+        assertThat(response).isNotNull();
+        assertThat(response.data()).hasSize(20);
+
+        assertThat(response.page().number()).isEqualTo(3);
+        assertThat(response.page().size()).isEqualTo(20);
+        assertThat(response.page().totalItems()).isEqualTo(100);
+        assertThat(response.page().totalPages()).isEqualTo(5);
+        assertThat(response.page().hasNext()).isTrue();
+        assertThat(response.page().hasPrev()).isTrue();
 
         verify(repository, times(1)).findAll();
     }
 
-    // Método auxiliar para crear una lista grande de productos
     private List<ProductCard> createLargeProductList(int size) {
-        List<ProductCard> products = new java.util.ArrayList<>();
+        List<ProductCard> products = new ArrayList<>();
 
         for (int i = 0; i < size; i++) {
             Map<String, String> attributes = new HashMap<>();
@@ -355,60 +306,6 @@ class GetProductListServiceTest {
 
         return products;
     }
-
-    @Test
-    void getProductList_WhenProductsHaveDifferentCurrencies_ShouldPreserveCurrencies() {
-        // Arrange
-        Map<String, String> attrs1 = new HashMap<>();
-        attrs1.put("marca", "Logitech");
-
-        Map<String, String> attrs2 = new HashMap<>();
-        attrs2.put("marca", "Samsung");
-
-        List<ProductCard> mixedCurrencyProducts = Arrays.asList(
-                new ProductCard(
-                        ITEM_ID_TECLADO,
-                        PRODUCT_ID_TECLADO,
-                        "Producto COP",
-                        89900,
-                        "COP",
-                        true,
-                        "pic1",
-                        null,
-                        4.5,
-                        "+1mil",
-                        attrs1
-                ),
-                new ProductCard(
-                        ITEM_ID_MONITOR,
-                        PRODUCT_ID_MONITOR,
-                        "Producto USD",
-                        399,
-                        "USD",
-                        false,
-                        "pic2",
-                        null,
-                        4.8,
-                        "+500",
-                        attrs2
-                )
-        );
-
-        when(repository.findAll()).thenReturn(mixedCurrencyProducts);
-
-        // Act
-        List<ProductCard> result = service.getProductList();
-
-        // Assert
-        assertNotNull(result);
-        assertEquals(2, result.size());
-
-        assertEquals("COP", result.get(0).currency());
-        assertEquals(89900, result.get(0).priceValue());
-
-        assertEquals("USD", result.get(1).currency());
-        assertEquals(399, result.get(1).priceValue());
-
-        verify(repository, times(1)).findAll();
-    }
 }
+
+
