@@ -24,6 +24,7 @@ public class AuthService implements AuthUseCase {
     private final String demoUser;
     private final String demoPass;
 
+
     public AuthService(@Value("${security.jwt.secret}") String secret,
                        @Value("${security.jwt.expiration-minutes}") long expirationMinutes,
                        @Value("${security.auth.username}") String demoUser,
