@@ -1,9 +1,6 @@
 package com.marketplace.shared;
 
-import com.marketplace.domain.exception.BadResourceRequestException;
-import com.marketplace.domain.exception.ConflictException;
-import com.marketplace.domain.exception.NoSuchResourceFoundException;
-import com.marketplace.domain.exception.UnprocessableEntityException;
+import com.marketplace.domain.exception.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +36,10 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex, HttpServletRequest req) {
         return build(HttpStatus.INTERNAL_SERVER_ERROR, "INTERNAL_ERROR", "Unexpected internal error", req);
     }
-
+    @ExceptionHandler(UnauthorizedException.class)
+    public ResponseEntity<Map<String, Object>> handleUnauthorized(UnauthorizedException ex,HttpServletRequest req) {
+        return build(HttpStatus.UNAUTHORIZED, "UNAUTHORIZED", ex.getMessage(),req);
+    }
     private ResponseEntity<Map<String, Object>> build(HttpStatus status, String error, String message, HttpServletRequest req) {
         return ResponseEntity.status(status).body(Map.of(
                 "timestamp", Instant.now(),

@@ -1,9 +1,6 @@
 package com.marketplace.shared;
 
-import com.marketplace.domain.exception.BadResourceRequestException;
-import com.marketplace.domain.exception.ConflictException;
-import com.marketplace.domain.exception.NoSuchResourceFoundException;
-import com.marketplace.domain.exception.UnprocessableEntityException;
+import com.marketplace.domain.exception.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -269,7 +266,7 @@ class GlobalExceptionHandlerTest {
         ConflictException conflictEx = new ConflictException(TEST_MESSAGE);
         UnprocessableEntityException unprocessableEx = new UnprocessableEntityException(TEST_MESSAGE);
         Exception genericEx = new Exception(TEST_MESSAGE);
-
+        UnauthorizedException unauthorizedEx = new UnauthorizedException(TEST_MESSAGE);
         when(request.getRequestURI()).thenReturn(TEST_PATH);
 
         // Act
@@ -277,6 +274,7 @@ class GlobalExceptionHandlerTest {
         ResponseEntity<Map<String, Object>> badRequestResponse = exceptionHandler.handleBadRequest(badRequestEx, request);
         ResponseEntity<Map<String, Object>> conflictResponse = exceptionHandler.handleConflict(conflictEx, request);
         ResponseEntity<Map<String, Object>> unprocessableResponse = exceptionHandler.handleUnprocessable(unprocessableEx, request);
+        ResponseEntity<Map<String, Object>> handleUnauthorized = exceptionHandler.handleUnauthorized(unauthorizedEx, request);
         ResponseEntity<Map<String, Object>> genericResponse = exceptionHandler.handleGeneric(genericEx, request);
 
         // Assert
@@ -285,7 +283,9 @@ class GlobalExceptionHandlerTest {
                 () -> assertResponseFormat(badRequestResponse, 400, "BAD_REQUEST", TEST_MESSAGE),
                 () -> assertResponseFormat(conflictResponse, 409, "CONFLICT", TEST_MESSAGE),
                 () -> assertResponseFormat(unprocessableResponse, 422, "UNPROCESSABLE_ENTITY", TEST_MESSAGE),
+                () -> assertResponseFormat(handleUnauthorized, 401, "UNAUTHORIZED", TEST_MESSAGE),
                 () -> assertResponseFormat(genericResponse, 500, "INTERNAL_ERROR", "Unexpected internal error")
+
         );
     }
 
