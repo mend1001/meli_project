@@ -1,7 +1,6 @@
 package com.marketplace.application.service;
 
 import com.marketplace.domain.exception.BadResourceRequestException;
-import com.marketplace.domain.exception.NoSuchResourceFoundException;
 import com.marketplace.domain.exception.UnauthorizedException;
 import com.marketplace.domain.port.in.AuthUseCase;
 import io.jsonwebtoken.Jwts;
@@ -30,7 +29,7 @@ public class AuthService implements AuthUseCase {
                        @Value("${security.auth.username}") String demoUser,
                        @Value("${security.auth.password}") String demoPass) {
 
-        // clave HMAC segura (requiere >= 32 bytes aprox)
+
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
         this.expirationMinutes = expirationMinutes;
         this.demoUser = demoUser;
@@ -43,7 +42,6 @@ public class AuthService implements AuthUseCase {
             throw new BadResourceRequestException("username/password are required");
         }
 
-        // Para la prueba: auth simple
         if (!demoUser.equals(username) || !demoPass.equals(password)) {
             throw new UnauthorizedException("Invalid credentials");
         }

@@ -59,7 +59,6 @@ public class JsonProductCatalogRepository implements ProductCatalogRepository {
                 String itemId = meta.path("id").asText(null);
                 String productId = meta.path("product_id").asText(null);
 
-                // components parsing
                 String title = null;
                 Integer priceValue = null;
                 String currency = null;
@@ -91,12 +90,9 @@ public class JsonProductCatalogRepository implements ProductCatalogRepository {
 
                         case "review_compacted" -> {
                             JsonNode rc = comp.path("review_compacted");
-                            // soporta tu estructura mejorada: rating.value + sold.label
+
                             if (rc.has("rating")) {
                                 ratingValue = rc.path("rating").path("value").isNumber() ? rc.path("rating").path("value").asDouble() : null;
-                            } else {
-                                // fallback si viene en values
-                                // no forzamos: dejamos null si no existe
                             }
                             if (rc.has("sold")) {
                                 soldLabel = rc.path("sold").path("label").asText(null);
@@ -113,14 +109,13 @@ public class JsonProductCatalogRepository implements ProductCatalogRepository {
                     }
                 }
 
-                // picture id (primer picture)
+
                 String pictureId = null;
                 JsonNode pictures = poly.path("pictures").path("pictures");
                 if (pictures.isArray() && pictures.size() > 0) {
                     pictureId = pictures.get(0).path("id").asText(null);
                 }
 
-                // si no hay title en components, fallback a null
                 result.add(new ProductCard(
                         itemId, productId, title,
                         priceValue, currency,

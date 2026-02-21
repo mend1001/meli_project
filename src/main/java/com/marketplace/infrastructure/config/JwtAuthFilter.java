@@ -51,7 +51,6 @@ public class JwtAuthFilter extends GenericFilter {
                 SecurityContextHolder.getContext().setAuthentication(auth);
 
             } catch (Exception ignored) {
-                // Si el token es inválido/expiró, no autenticamos y dejamos que Security responda 401
                 SecurityContextHolder.clearContext();
             }
         }
